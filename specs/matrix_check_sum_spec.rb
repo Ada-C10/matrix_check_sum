@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/reporters'
+require 'minitest/skip_dsl'
 require_relative '../lib/matrix_check_sum'
 
 describe "matrix check sum" do
