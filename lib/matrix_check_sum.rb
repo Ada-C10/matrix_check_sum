@@ -2,6 +2,9 @@
 # whether the sum of each row matches the sum of corresponding column i.e. sum
 # of numbers in row i is the same as the sum of numbers in column i for i = 0 to row.length-1
 # If this is the case, return true. Otherwise, return false.
+
+#Time Complexity: O(n) * O(2n) = O(n^2)
+#Space Complexity: O(1)
 def matrix_check_sum(matrix)
   row_sum = 0
   column_sum = 0
@@ -27,5 +30,3 @@ def matrix_check_sum(matrix)
 
   return true
 end
-
-puts matrix_check_sum([[1, 2, 3, 8], [9, 5, 3, 1], [0, 3, 5, 6], [0, 8, 3, 6]])
