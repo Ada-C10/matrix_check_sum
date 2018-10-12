@@ -3,5 +3,19 @@
 # of numbers in row i is the same as the sum of numbers in column i for i = 0 to row.length-1
 # If this is the case, return true. Otherwise, return false.
 def matrix_check_sum(matrix)
-  raise NotImplementedError
+
+  dim = matrix.length
+
+  dim.times do |i|
+    row_sum = matrix[i].sum
+    col_sum = sum_column(matrix, i)
+    return false if row_sum != col_sum
+  end
+
+  return true
+
+end
+
+def sum_column(matrix, col)
+  matrix.sum { |row_arr| row_arr[col] }
 end
