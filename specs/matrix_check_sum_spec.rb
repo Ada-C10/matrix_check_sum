@@ -13,6 +13,7 @@ describe "matrix check sum" do
       # sums = 10, 18, 14, 17 for columns 0 through 3
 
       # test and validate
+
       matrix_check_sum(matrix).must_equal true
     end
 
