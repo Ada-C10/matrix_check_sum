@@ -3,27 +3,19 @@
 # of numbers in row i is the same as the sum of numbers in column i for i = 0 to row.length-1
 # If this is the case, return true. Otherwise, return false.
 
-# Time complexity: 
-# Space complexity:
+# Time complexity: O(n x n)
+# Space complexity: O(1)
 
 def matrix_check_sum(matrix)
-  row_sums = []
-  column_sums = []
 
-  matrix.each do |row|
-    row_sums << row.sum
-  end
+  matrix.length.times do |i|
+    column_sum = 0
+    row_sum = matrix[i].sum
 
-  matrix.length.times do |column|
-    sum = 0
-    matrix.length.times do |row|
-      sum += matrix[row][column]
+    matrix.length.times do |j|
+      column_sum += matrix[j][i]
     end
-    column_sums << sum
-  end
-
-  row_sums.each.with_index do |sum, index|
-    return false if sum != column_sums[index]
+    return false if row_sum != column_sum
   end
 
   return true
