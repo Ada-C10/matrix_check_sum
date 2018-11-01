@@ -18,3 +18,14 @@ def matrix_check_sum(matrix)
   end
   return true
 end
+
+#Space Complexity:
+# O(n + m) where n is the length/size of the row, and m is length/size of the column.
+# Two variables are defined, and the space that their values take up will increase
+# based on the row + column value.
+#
+#Time Complexity:
+# O(n * m) where n is the length of the row, and m is the length of the column.
+# There are two loops in this solution. In the worst case the first will run
+# n times and the second will run m times.
+#
