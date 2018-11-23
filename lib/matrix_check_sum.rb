@@ -10,16 +10,10 @@ def matrix_check_sum(matrix)
 
   while a <= matrix.length - 1 do
 
-    # puts "in sub array #{matrix[a]}"
-
     while b <= matrix[0].length - 1 do
-      # puts "adding #{matrix[a][b]} (#{a}#{b}) from #{matrix[a]}to #{x_val}"
-      # puts "adding #{matrix[b][a]} (#{b}#{a}) from #{matrix[b]} to #{y_val}"
       x_val += matrix[a][b]
       y_val += matrix[b][a]
       b += 1
-      # puts "x is now #{x_val}"
-      # puts " y is now #{y_val}"
     end
 
     if x_val != y_val
