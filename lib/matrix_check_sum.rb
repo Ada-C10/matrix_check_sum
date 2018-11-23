@@ -5,17 +5,14 @@
 def matrix_check_sum(matrix)
   x_val = 0
   y_val = 0
-  i = 0
   a = 0
   b = 0
-  x_stop = matrix[0].length - 1
-  y_stop = matrix.length - 1
 
-  while a <= y_stop do
+  while a <= matrix.length - 1 do
 
     # puts "in sub array #{matrix[a]}"
 
-    while b <= x_stop do
+    while b <= matrix[0].length - 1 do
       # puts "adding #{matrix[a][b]} (#{a}#{b}) from #{matrix[a]}to #{x_val}"
       # puts "adding #{matrix[b][a]} (#{b}#{a}) from #{matrix[b]} to #{y_val}"
       x_val += matrix[a][b]
