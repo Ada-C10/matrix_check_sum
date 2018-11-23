@@ -37,7 +37,7 @@ describe "matrix check sum" do
       # test and validate
       matrix_check_sum(matrix).must_equal false
     end
-
+  
     it "4 X 4 matrix check sum false" do
       # setup
       matrix = [[1, 10, 1, 32],
