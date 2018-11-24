@@ -5,10 +5,28 @@
 def matrix_check_sum(matrix)
   sum_boo = false
   n = matrix[0].length
+  sum_row = 0
+  sum_col = 0
+  i = 0
+  j = 0
+  x = 0
+  while x < n
+    while j < n
+      sum_row += matrix[i][j]
+      j += 1
+    end
 
-  n.times do |i|
-    sum_row += n[i]
+    while i < n
+      sum_col += matrix[i][j]
+      i += 1
+    end
+
+    if sum_row == sum_col
+      x += 1
+    else
+      return false
+    end
+
   end
 
-  raise NotImplementedError
 end
