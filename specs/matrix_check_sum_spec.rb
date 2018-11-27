@@ -18,6 +18,7 @@ describe "matrix check sum" do
 
     it "5 X 5 matrix check sum true" do
       # setup
+      # skip
       matrix = [[0, 0, 4, 0, 0],
                 [0, 0, 0, 0, 0],
                 [4, 0, 0, 0, 0],
@@ -30,6 +31,7 @@ describe "matrix check sum" do
 
     it "3 X 3 matrix check sum false" do
       # setup
+      # skip
       matrix = [[1, 2, 3],
                 [4, 5, 6],
                 [10, 11, 12]]
@@ -40,6 +42,7 @@ describe "matrix check sum" do
 
     it "4 X 4 matrix check sum false" do
       # setup
+      # skip
       matrix = [[1, 10, 1, 32],
                 [2, 3, 12, 4],
                 [2, 3, 12, 4],
