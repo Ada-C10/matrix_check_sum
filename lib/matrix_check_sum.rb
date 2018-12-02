@@ -8,9 +8,6 @@ def matrix_check_sum(matrix)
   i = 0
   matrix_len = matrix.length #rows
 
-
-  # len = matrix_len.dup
-
   matrix_len.times do
 
     c_sum = 0
@@ -18,8 +15,6 @@ def matrix_check_sum(matrix)
     j = 0
 
     row_len = matrix[i].length
-    #
-    # len2 = row_len.dup
 
     row_len.times do
 
